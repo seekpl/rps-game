@@ -10,21 +10,7 @@ class Button():
         self.width = width
         self.height = height
         self.pos = pos
-
-#    def is_pressed(self):
-#        if event.type == pygame.MOUSEBUTTONDOWN:
-#            if pygame.mouse.get_pressed()[0]:
-#                self.pos = pygame.mouse.get_pos()
-#            print(self.pos)
-
-#    def clicked(self, pos):
-#        for event in pygame.event.get():
-#            if event.type == pygame.MOUSEBUTTONDOWN:
-#                (x, y) = event.pos
-#                for button in buttons:
-#                    if button.rect.collidepoint(x, y):
-#                        print("CLICK!")
-
+        
     def clicked(self, pos):
         self.pos = pygame.mouse.get_pos()
         if self.pos[0] > self.x and self.pos[0] < self.x + self.width:
