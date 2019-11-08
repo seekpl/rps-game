@@ -1,6 +1,5 @@
 import random
 import pygame
-import os
 
 
 class Button():
